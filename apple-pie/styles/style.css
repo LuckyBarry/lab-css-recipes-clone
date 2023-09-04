@@ -22,3 +22,86 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+header {
+
+  margin: 50px 25px;
+  background-image: url("../images/apple-pie.jpg");
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 620px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+}
+
+.introduction {
+  text-align: center;
+  margin-left: 220px;
+  margin-right: 220px;
+  margin-bottom: 25px;
+}
+
+.prep {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 5px grey;
+  margin-bottom: 25px;
+}
+
+.ingredientsSection {
+  text-align: left;
+  margin-left: 100px;
+  margin-bottom: 25px;
+}
+
+.directionsImg {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 5px grey;
+  margin-bottom: 25px;
+}
+
+.directions {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin-left: 100px;
+  border-bottom: solid;
+  border-color: rgb(91, 87, 87);
+  border-bottom: 4px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+h2 {
+  padding-bottom: 20px;
+  margin-left: 50px;
+}
+
+ol {
+  /* 1. Remove the default list style */
+  list-style: none;
+}
+
+ol>li {
+  /* 2. Create a custom list counter */
+  counter-increment: listcounter;
+}
+
+ol>li::before {
+  /*3. Set the new style for the list markers */
+  content: counter(listcounter) ")";
+}
